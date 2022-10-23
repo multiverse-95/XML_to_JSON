@@ -5,10 +5,7 @@
 
 package com.test.xml_to_json.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-
-import java.util.List;
 
 /**
  * Поля свойств
@@ -21,7 +18,7 @@ public class PropertyDTO {
     @JacksonXmlProperty(localName = "Description")
     private String description;
     @JacksonXmlProperty(localName = "DefaultValue")
-    private List<Integer> defaultValue;
+    private Integer defaultValue;
 
     /**
      * Конструкторы
@@ -29,16 +26,13 @@ public class PropertyDTO {
     public PropertyDTO() {
     }
 
-    public PropertyDTO(String name, String value, String description, List<Integer> defaultValue) {
+    public PropertyDTO(String name, String value, String description, Integer defaultValue) {
         this.name = name;
         this.value = value;
         this.description = description;
         this.defaultValue = defaultValue;
     }
 
-    /**
-     * Геттеры и сеттеры
-     */
     public String getName() {
         return name;
     }
@@ -63,11 +57,11 @@ public class PropertyDTO {
         this.description = description;
     }
 
-    public List<Integer> getDefaultValue() {
+    public Integer getDefaultValue() {
         return defaultValue;
     }
 
-    public void setDefaultValue(List<Integer> defaultValue) {
+    public void setDefaultValue(Integer defaultValue) {
         this.defaultValue = defaultValue;
     }
 }

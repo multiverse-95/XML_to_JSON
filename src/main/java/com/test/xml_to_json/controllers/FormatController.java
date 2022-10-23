@@ -5,6 +5,7 @@
 
 package com.test.xml_to_json.controllers;
 
+import com.test.xml_to_json.dto.PropertyDTO;
 import com.test.xml_to_json.dto.PropertyListDTO;
 import com.test.xml_to_json.service.XmlParserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ public class FormatController {
      */
     @GetMapping(path="/getJson", consumes = APPLICATION_XML_VALUE, produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> getJsonFromXml(@RequestBody PropertyListDTO propertyListDTO, @RequestParam("listValues") List<Integer> listValues) throws Exception {
-        return ResponseEntity.ok(propertyListDTO.getPropertyList());
+        List<PropertyDTO> propertyListFinal = xmlParserService.getFinalJsonFromXml(propertyListDTO, listValues);
+        return ResponseEntity.ok(propertyListFinal);
     }
 }
