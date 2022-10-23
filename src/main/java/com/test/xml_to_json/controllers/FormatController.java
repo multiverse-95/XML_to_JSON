@@ -8,10 +8,14 @@ package com.test.xml_to_json.controllers;
 import com.test.xml_to_json.dto.PropertyListDTO;
 import com.test.xml_to_json.service.XmlParserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 
 @RestController
 @RequestMapping("/api/formatXml")
@@ -25,10 +29,8 @@ public class FormatController {
      * @return json с xml
      * @throws Exception исключение
      */
-    @GetMapping("/getJson")
-    public ResponseEntity<Object> getJsonFromXml(@RequestParam("listValues") List<Integer> listValues) throws Exception {
-        String xmlString ="<?xml version=\"1.0\" encoding=\"UTF-8\"?> <PropertyList> <Property> <Name>CommandTimeout</Name><Value>60</Value><Description>Setting the timeout(in seconds)</Description><DefaultValue></DefaultValue></Property><Property><Name>Address</Name><Value>0.0.0.0</Value><Description>ip:port</Description><DefaultValue></DefaultValue></Property> </PropertyList>";
-        PropertyListDTO propertyListDTO = xmlParserService.parseXml(xmlString);
+    @GetMapping(path="/getJson", consumes = APPLICATION_XML_VALUE, produces = APPLICATION_JSON_VALUE)
+    public ResponseEntity<Object> getJsonFromXml(@RequestBody PropertyListDTO propertyListDTO, @RequestParam("listValues") List<Integer> listValues) throws Exception {
         return ResponseEntity.ok(propertyListDTO.getPropertyList());
     }
 }
