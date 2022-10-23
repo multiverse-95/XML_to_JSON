@@ -10,6 +10,9 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 import java.util.List;
 
+/**
+ * Поля свойств
+ */
 public class PropertyDTO {
     @JacksonXmlProperty(localName = "Name")
     private String name;
@@ -20,6 +23,9 @@ public class PropertyDTO {
     @JacksonXmlProperty(localName = "DefaultValue")
     private List<Integer> defaultValue;
 
+    /**
+     * Конструкторы
+     */
     public PropertyDTO() {
     }
 
@@ -30,6 +36,9 @@ public class PropertyDTO {
         this.defaultValue = defaultValue;
     }
 
+    /**
+     * Геттеры и сеттеры
+     */
     public String getName() {
         return name;
     }

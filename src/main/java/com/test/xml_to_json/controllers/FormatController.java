@@ -8,7 +8,6 @@ package com.test.xml_to_json.controllers;
 import com.test.xml_to_json.dto.PropertyListDTO;
 import com.test.xml_to_json.service.XmlParserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,8 +24,9 @@ public class FormatController {
 
     /**
      * Метод получает на вход xml и возвращает Json из xml
-     * @param listValues список числовых значение
-     * @return json с xml
+     * @param propertyListDTO xml файл
+     * @param listValues список значений
+     * @return json файл из xml
      * @throws Exception исключение
      */
     @GetMapping(path="/getJson", consumes = APPLICATION_XML_VALUE, produces = APPLICATION_JSON_VALUE)

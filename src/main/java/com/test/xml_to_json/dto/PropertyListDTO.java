@@ -5,19 +5,23 @@
 
 package com.test.xml_to_json.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 import java.util.List;
-
+/**
+ * Список свойств
+ */
 public class PropertyListDTO {
     @JacksonXmlProperty(localName = "Property")
     @JacksonXmlCData
     @JacksonXmlElementWrapper(useWrapping = false)
     private List<PropertyDTO> propertyList;
 
+    /**
+     * Конструкторы
+     */
     public PropertyListDTO() {
     }
 
@@ -25,6 +29,9 @@ public class PropertyListDTO {
         this.propertyList = propertyList;
     }
 
+    /**
+     * Геттеры и сеттеры
+     */
     public List<PropertyDTO> getPropertyList() {
         return propertyList;
     }
