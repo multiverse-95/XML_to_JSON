@@ -1,0 +1,41 @@
+2022-10-23 22:42:46.556 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting XmlToJsonApplication using Java 17.0.2 on DESKTOP-JV7JF9A with PID 18556 (C:\git\java\test_sber_xml_json\xml_to_json\target\classes started by Engineer in C:\git\java\test_sber_xml_json\xml_to_json)
+2022-10-23 22:42:46.561 DEBUG [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:56)] - Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-10-23 22:42:46.562 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634)] - No active profile set, falling back to 1 default profile: "default"
+2022-10-23 22:42:47.451 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started XmlToJsonApplication in 1.16 seconds (JVM running for 1.656)
+2022-10-23 22:42:54.963 DEBUG [http-nio-8080-exec-2] [com.test.xml_to_json.controllers.FormatController.getJsonFromXml(FormatController.java:39)] - /api/formatXml/getJson is Successful
+2022-10-23 22:44:48.874 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting XmlToJsonApplication using Java 17.0.2 on DESKTOP-JV7JF9A with PID 18536 (C:\git\java\test_sber_xml_json\xml_to_json\target\classes started by Engineer in C:\git\java\test_sber_xml_json\xml_to_json)
+2022-10-23 22:44:48.880 DEBUG [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:56)] - Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-10-23 22:44:48.881 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634)] - No active profile set, falling back to 1 default profile: "default"
+2022-10-23 22:44:49.746 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started XmlToJsonApplication in 1.144 seconds (JVM running for 1.64)
+2022-10-23 22:46:22.825 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting XmlToJsonApplication using Java 17.0.2 on DESKTOP-JV7JF9A with PID 19560 (C:\git\java\test_sber_xml_json\xml_to_json\target\classes started by Engineer in C:\git\java\test_sber_xml_json\xml_to_json)
+2022-10-23 22:46:22.831 DEBUG [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:56)] - Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-10-23 22:46:22.832 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634)] - No active profile set, falling back to 1 default profile: "default"
+2022-10-23 22:46:23.696 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started XmlToJsonApplication in 1.141 seconds (JVM running for 1.635)
+2022-10-23 22:46:27.248 DEBUG [http-nio-8080-exec-2] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:70)] - getFinalJsonFromXml is Success!
+2022-10-23 22:46:27.249 DEBUG [http-nio-8080-exec-2] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:71)] - sizePropertyList is 2
+2022-10-23 22:46:27.249 DEBUG [http-nio-8080-exec-2] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:72)] - sizeListValues is 1
+2022-10-23 22:46:27.249 DEBUG [http-nio-8080-exec-2] [com.test.xml_to_json.controllers.FormatController.getJsonFromXml(FormatController.java:39)] - /api/formatXml/getJson is Successful!
+2022-10-23 22:47:19.848 DEBUG [http-nio-8080-exec-7] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:70)] - getFinalJsonFromXml is Success!
+2022-10-23 22:47:19.848 DEBUG [http-nio-8080-exec-7] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:71)] - sizePropertyList is 2
+2022-10-23 22:47:19.848 DEBUG [http-nio-8080-exec-7] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:72)] - sizeListValues is 2
+2022-10-23 22:47:19.848 DEBUG [http-nio-8080-exec-7] [com.test.xml_to_json.controllers.FormatController.getJsonFromXml(FormatController.java:39)] - /api/formatXml/getJson is Successful!
+2022-10-23 22:48:11.561 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting ApiTest using Java 17.0.2 on DESKTOP-JV7JF9A with PID 17240 (started by Engineer in C:\git\java\test_sber_xml_json\xml_to_json)
+2022-10-23 22:48:11.567 DEBUG [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:56)] - Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-10-23 22:48:11.568 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634)] - No active profile set, falling back to 1 default profile: "default"
+2022-10-23 22:48:12.753 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started ApiTest in 1.399 seconds (JVM running for 2.204)
+2022-10-23 22:48:13.165 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:70)] - getFinalJsonFromXml is Success!
+2022-10-23 22:48:13.166 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:71)] - sizePropertyList is 2
+2022-10-23 22:48:13.166 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:72)] - sizeListValues is 0
+2022-10-23 22:48:13.166 DEBUG [main] [com.test.xml_to_json.controllers.FormatController.getJsonFromXml(FormatController.java:39)] - /api/formatXml/getJson is Successful!
+2022-10-23 22:48:13.223 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:70)] - getFinalJsonFromXml is Success!
+2022-10-23 22:48:13.224 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:71)] - sizePropertyList is 2
+2022-10-23 22:48:13.224 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:72)] - sizeListValues is 2
+2022-10-23 22:48:13.224 DEBUG [main] [com.test.xml_to_json.controllers.FormatController.getJsonFromXml(FormatController.java:39)] - /api/formatXml/getJson is Successful!
+2022-10-23 22:48:13.231 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:70)] - getFinalJsonFromXml is Success!
+2022-10-23 22:48:13.231 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:71)] - sizePropertyList is 2
+2022-10-23 22:48:13.231 DEBUG [main] [com.test.xml_to_json.service.XmlParserService.getFinalJsonFromXml(XmlParserService.java:72)] - sizeListValues is 1
+2022-10-23 22:48:13.232 DEBUG [main] [com.test.xml_to_json.controllers.FormatController.getJsonFromXml(FormatController.java:39)] - /api/formatXml/getJson is Successful!
+2022-10-23 22:48:39.272 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)] - Starting XmlToJsonApplication using Java 17.0.2 on DESKTOP-JV7JF9A with PID 19024 (C:\git\java\test_sber_xml_json\xml_to_json\target\classes started by Engineer in C:\git\java\test_sber_xml_json\xml_to_json)
+2022-10-23 22:48:39.277 DEBUG [main] [org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:56)] - Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-10-23 22:48:39.278 INFO [main] [org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:634)] - No active profile set, falling back to 1 default profile: "default"
+2022-10-23 22:48:40.114 INFO [main] [org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)] - Started XmlToJsonApplication in 1.11 seconds (JVM running for 1.614)

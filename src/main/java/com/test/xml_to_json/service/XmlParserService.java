@@ -7,8 +7,11 @@ package com.test.xml_to_json.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.test.xml_to_json.controllers.FormatController;
 import com.test.xml_to_json.dto.PropertyDTO;
 import com.test.xml_to_json.dto.PropertyListDTO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -19,6 +22,7 @@ import java.util.List;
  * Класс для парсинга xml
  */
 public class XmlParserService {
+    private final Logger logger = LoggerFactory.getLogger(XmlParserService.class);
 
     /**
      * Парсит xml файл в json
@@ -32,6 +36,7 @@ public class XmlParserService {
             propertyList = xmlMapper.readValue(xmlString, PropertyListDTO.class);
             return  propertyList;
         } catch (Exception e){
+            logger.error("Error with Xml: {}", e.getMessage());
             e.getStackTrace();
             throw new Exception("Error with Xml");
         }
@@ -62,8 +67,12 @@ public class XmlParserService {
                 Integer defaultValue = listValues.get(i);
                 propertyListOutput.add(new PropertyDTO(name,value,description,defaultValue));
             }
+            logger.debug("getFinalJsonFromXml is Success!");
+            logger.debug("sizePropertyList is {}",sizePropertyList);
+            logger.debug("sizeListValues is {}",sizeListValues);
             return propertyListOutput;
         } catch (Exception e){
+            logger.error("Error with format data: {}", e.getMessage());
             e.getStackTrace();
             throw new Exception("Error with format data: "+ e.getMessage());
         }
