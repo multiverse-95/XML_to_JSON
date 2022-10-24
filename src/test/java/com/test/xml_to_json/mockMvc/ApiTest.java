@@ -36,7 +36,7 @@ public class ApiTest {
     @Test
     public void checkApiPropertiesWithTwoParam() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders
-                .get("/api/formatXml/getJson").content("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+                .post("/api/formatXml/getJson").content("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
                                 "<PropertyList>\n" +
                                 "    <Property>\n" +
                                 "        <Name>CommandTimeout</Name>\n" +
@@ -93,7 +93,7 @@ public class ApiTest {
     @Test
     public void checkApiPropertiesWithOneParam() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders
-                        .get("/api/formatXml/getJson").content("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+                        .post("/api/formatXml/getJson").content("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
                                 "<PropertyList>\n" +
                                 "    <Property>\n" +
                                 "        <Name>CommandTimeout</Name>\n" +
@@ -149,7 +149,7 @@ public class ApiTest {
     @Test
     public void checkApiPropertiesWithoutParam() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders
-                        .get("/api/formatXml/getJson").content("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+                        .post("/api/formatXml/getJson").content("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
                                 "<PropertyList>\n" +
                                 "    <Property>\n" +
                                 "        <Name>CommandTimeout</Name>\n" +
