@@ -33,7 +33,7 @@ public class FormatController {
      * @return json файл из xml
      * @throws Exception исключение
      */
-    @GetMapping(path="/getJson", consumes = APPLICATION_XML_VALUE, produces = APPLICATION_JSON_VALUE)
+    @PostMapping(path="/getJson", consumes = APPLICATION_XML_VALUE, produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> getJsonFromXml(@RequestBody PropertyListDTO propertyListDTO, @RequestParam("listValues") List<Integer> listValues) throws Exception {
         List<PropertyDTO> propertyListFinal = xmlFormatService.getFinalJsonFromXml(propertyListDTO, listValues);
         logger.debug("/api/formatXml/getJson is Successful!");
