@@ -33,6 +33,9 @@ public class PropertyDTO {
         this.defaultValue = defaultValue;
     }
 
+    /**
+     * Геттеры и сеттеры
+     */
     public String getName() {
         return name;
     }

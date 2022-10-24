@@ -5,8 +5,6 @@
 
 package com.test.xml_to_json.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.test.xml_to_json.dto.PropertyDTO;
 import com.test.xml_to_json.dto.PropertyListDTO;
 import org.slf4j.Logger;
@@ -18,7 +16,7 @@ import java.util.List;
 
 @Service
 /**
- * Класс для парсинга xml
+ * Класс для работы с xml
  */
 public class XmlFormatService {
     private final Logger logger = LoggerFactory.getLogger(XmlFormatService.class);
