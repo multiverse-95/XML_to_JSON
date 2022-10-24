@@ -7,7 +7,7 @@ package com.test.xml_to_json.controllers;
 
 import com.test.xml_to_json.dto.PropertyDTO;
 import com.test.xml_to_json.dto.PropertyListDTO;
-import com.test.xml_to_json.service.XmlParserService;
+import com.test.xml_to_json.service.XmlFormatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +24,7 @@ import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 public class FormatController {
     private final Logger logger = LoggerFactory.getLogger(FormatController.class);
     @Autowired
-    private XmlParserService xmlParserService;
+    private XmlFormatService xmlFormatService;
 
     /**
      * Метод получает на вход xml и возвращает Json из xml
@@ -35,7 +35,7 @@ public class FormatController {
      */
     @GetMapping(path="/getJson", consumes = APPLICATION_XML_VALUE, produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> getJsonFromXml(@RequestBody PropertyListDTO propertyListDTO, @RequestParam("listValues") List<Integer> listValues) throws Exception {
-        List<PropertyDTO> propertyListFinal = xmlParserService.getFinalJsonFromXml(propertyListDTO, listValues);
+        List<PropertyDTO> propertyListFinal = xmlFormatService.getFinalJsonFromXml(propertyListDTO, listValues);
         logger.debug("/api/formatXml/getJson is Successful!");
         return ResponseEntity.ok(propertyListFinal);
     }
