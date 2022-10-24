@@ -48,7 +48,7 @@
     Клонируйте проект. Запустите и проверьте по адресу: http://localhost:8080/api/formatXml/getJson?listValues=12,24
 ## Проверка работы
 ### Пример:
-![Alt text](/src/main/resources/screenshots/test_api_1.PNG "Скриншот - проверка апи")
+![Alt text](/src/main/resources/screenshots/test_api_xml_1.PNG "Скриншот - проверка апи")
 ## Запуск в докер
     Должен быть установлен докер. Клонируйте проект. Из папки out переместите папку backend в директорию линукс.
 #### Выполните в директории, где папка backend
@@ -57,7 +57,7 @@ docker run -d --restart always -p 8080:8080 -v "${PWD}/backend:/usr/local/tomcat
 ```
 ## Проверка работы 
 ### Пример 1:
-![Alt text](/src/main/resources/screenshots/test_api_2.PNG "Скриншот - проверка апи docker 1")
+![Alt text](/src/main/resources/screenshots/test_api_xml_2.PNG "Скриншот - проверка апи docker 1")
 ### Пример 2:
-![Alt text](/src/main/resources/screenshots/test_api_3.PNG "Скриншот - проверка апи docker 2")
+![Alt text](/src/main/resources/screenshots/test_api_xml_3.PNG "Скриншот - проверка апи docker 2")
     
