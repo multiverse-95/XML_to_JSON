@@ -50,11 +50,12 @@
 ### Пример:
 ![Alt text](/src/main/resources/screenshots/test_api_1.PNG "Скриншот - проверка апи")
 ## Запуск в докер
-    Должен быть установлен докер. Клонируйте проект. Из папки out переместите папку backend в директорию линукс. Проверьте в postman
+    Должен быть установлен докер. Клонируйте проект. Из папки out переместите папку backend в директорию линукс.
 #### Выполните в директории, где папка backend
 ```bash
 docker run -d --restart always -p 8080:8080 -v "${PWD}/backend:/usr/local/tomcat/webapps" --name xml_to_json tomcat:9.0.65-jdk17
 ```
+## Проверка работы 
 ### Пример 1:
 ![Alt text](/src/main/resources/screenshots/test_api_2.PNG "Скриншот - проверка апи docker 1")
 ### Пример 2:
