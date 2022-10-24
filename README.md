@@ -49,4 +49,11 @@
     Клонируйте проект. Запустите и проверьте по адресу: http://localhost:8080/api/formatXml/getJson?listValues=12,24
 ### Пример:
 ![Alt text](/src/main/resources/screenshots/test_api_1.PNG "Скриншот - проверка апи")
+## Запуск в докер
+    Должен быть установлен докер. Клонируйте проект. Из папки out переместите папку backend в директорию линукс. Проверьте в postman
+```bash
+docker run -d --restart always -p 8080:8080 -v "${PWD}/backend:/usr/local/tomcat/webapps" --name xml_to_json tomcat:9.0.65-jdk17
+```
+### Пример:
+![Alt text](/src/main/resources/screenshots/test_api_2.PNG "Скриншот - проверка апи docker")
     
