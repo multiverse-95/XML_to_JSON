@@ -46,7 +46,7 @@
   }
 ]
 ```
-## Запуск в IntelliJ IDEA
+## Запуск в IntelliJ IDEA (JDK 17)
     Клонируйте проект. Запустите и проверьте по адресу: http://localhost:8080/api/formatXml/getJson?listValues=12,24
 ## Проверка работы
 ### Пример:
