@@ -44,9 +44,9 @@
   }
 ]
 ```
-
-## Проверка работы
+## Запуск в IntelliJ IDEA
     Клонируйте проект. Запустите и проверьте по адресу: http://localhost:8080/api/formatXml/getJson?listValues=12,24
+## Проверка работы
 ### Пример:
 ![Alt text](/src/main/resources/screenshots/test_api_1.PNG "Скриншот - проверка апи")
 ## Запуск в докер
