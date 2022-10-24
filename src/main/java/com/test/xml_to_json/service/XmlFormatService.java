@@ -24,24 +24,6 @@ public class XmlFormatService {
     private final Logger logger = LoggerFactory.getLogger(XmlFormatService.class);
 
     /**
-     * Парсит xml файл в json
-     * @param xmlString xml строка
-     * @throws JsonProcessingException исключение
-     */
-    public PropertyListDTO parseXml(String xmlString) throws Exception {
-        XmlMapper xmlMapper = new XmlMapper();
-        PropertyListDTO propertyList;
-        try {
-            propertyList = xmlMapper.readValue(xmlString, PropertyListDTO.class);
-            return  propertyList;
-        } catch (Exception e){
-            logger.error("Error with Xml: {}", e.getMessage());
-            e.getStackTrace();
-            throw new Exception("Error with Xml");
-        }
-    }
-
-    /**
      * Из списка listValues берет значения и добавляет в defaultValue в итоговый propertyList
      * @param propertyListDTO исходный список PropertyList
      * @param listValues список значений
@@ -76,6 +58,4 @@ public class XmlFormatService {
             throw new Exception("Error with format data: "+ e.getMessage());
         }
     }
-
-
 }
